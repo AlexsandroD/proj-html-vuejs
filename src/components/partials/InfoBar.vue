@@ -46,10 +46,10 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.90rem;
+    font-size: 0.77rem;
     color: #fff;
     height: 40px;
-    width:70%;
+    width:60%;
     margin: auto;
     .items1{
         width: 50%;

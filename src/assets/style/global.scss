@@ -52,7 +52,29 @@ body{
 
 
 // commons
-.flex{
-    display: flex;
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
 }
 // commons  end
+.myButton {
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:16px;
+	padding:11px 20px;
+	text-decoration:none;
+    
+}
+
+.myButton:active {
+	transform:scale(0.98);
+}
+// buttons
+
+// button end

@@ -1,45 +1,55 @@
 <template>
   <nav class="navigation-bar">
-      <div class="logo">
-          <span class="left">nex</span>
-          <span class="right">gen</span>
+      <Logo/>
+      <div class="right-nav">
+        <Menu :menu="menuVoices"/>
+        <i class="far fa-user user"></i>
+        <div class="myButton"><a class="" href="#">get in touch</a></div>
       </div>
-      <div class="menu"></div>
-      <div class="button"></div>
   </nav>
 </template>
 
 <script>
+import Logo from "../micro/Logo.vue";
+import Menu from "../micro/Menu.vue";
 export default {
-    name:"NavBar"
+    name:"NavBar",
+    components:{
+        Logo,
+        Menu,
+    },
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../../assets/style/global.scss";
-    nav.navigation-bar{
+        nav.navigation-bar{
         position: relative;
         z-index: 10;
         display: flex;
         align-items: center;
-        width: 70%;
+        justify-content: space-between;
+        width: 60%;
         margin: auto;
         height: 80px;
-        & .logo{
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing:2px;
-            color: white;
-            & .left{
-                border-radius: 15px 0px 0px 15px;
-                padding-left: 15px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                height: 80px;
-                background-color:#0384844a;
-                color:$blue-lagoon;
+        & .right-nav{
+            font-size: 0.90rem;
+            display: flex;
+            align-items: center;
+            & .user{
+                color:#fff;
+                margin: 0 10px;            }
+            & .myButton{
+                background-color: $fountain-blue;
+                margin-left:  10px;
+                & a{
+                    color:#fff;
+                    text-transform:uppercase;
+                    font-weight: 700;
+                }
             }
         }
-    }
+  }
+
  
 </style>
