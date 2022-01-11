@@ -1,8 +1,10 @@
 <template>
+<a href="#">
     <div class="logo">
           <span class="left">nex</span>
           <span class="right">gen</span>
-      </div>
+    </div>
+</a>
 </template>
 
 <script>
@@ -14,7 +16,10 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/style/global.scss";
 
-     .logo{
+    a{
+        cursor: poiter;
+    }
+    .logo{
             text-transform: uppercase;
             font-weight: 700;
             letter-spacing:2px;
@@ -28,6 +33,6 @@ export default {
                 background-color:#0384844a;
                 color:$fountain-blue;
             }
-        }
+    }
     
 </style>

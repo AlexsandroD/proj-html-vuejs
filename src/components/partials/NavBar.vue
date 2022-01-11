@@ -4,7 +4,7 @@
       <div class="right-nav">
         <Menu :menu="menuVoices"/>
         <i class="far fa-user user"></i>
-        <div class="myButton"><a class="" href="#">get in touch</a></div>
+        <Button/>
       </div>
   </nav>
 </template>
@@ -12,11 +12,13 @@
 <script>
 import Logo from "../micro/Logo.vue";
 import Menu from "../micro/Menu.vue";
+import Button from "../micro/Button.vue";
 export default {
     name:"NavBar",
     components:{
         Logo,
         Menu,
+        Button,
     },
 }
 </script>
@@ -39,15 +41,6 @@ export default {
             & .user{
                 color:#fff;
                 margin: 0 10px;            }
-            & .myButton{
-                background-color: $fountain-blue;
-                margin-left:  10px;
-                & a{
-                    color:#fff;
-                    text-transform:uppercase;
-                    font-weight: 700;
-                }
-            }
         }
   }
 
