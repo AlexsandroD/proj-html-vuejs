@@ -1,10 +1,12 @@
 <template>
     <div class="section2">
         <div class="container">
-            <h4>road transport</h4>
-            <h2>Main Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum autem laboriosam modi distinctio facere ipsam officia doloribus! Expedita aut voluptatum asperiores unde provident quod atque eos reiciendis. Velit, eligendi.</p> 
-            <a class="myButton">see all</a>
+            <h5>road transport</h5>
+            <h2>Main <span>Services</span></h2>
+            <div class="container-text-button">
+                <p>With all of this expertise and capability comes un unrivalled commitment to customer service. We will work hard to understand needs in order to develop a productive,long-term partnership.</p> 
+                <a class="myButton">see all</a>
+            </div>
             <div class="card-container">
                 <Card v-for="(card,index) in cards" :key="index" :card="card"/>
             </div>
@@ -48,13 +50,42 @@ export default {
 @import "../../assets/style/global.scss";
 
     .section2{
-        height:600px;
         background-color: $shark;
         display:grid;
         & .container{
-            background-color: green;
+            padding: 90px 0px;
             width: 60%;
             margin: auto;
+            & h5{
+                color: $fountain-blue;
+                text-transform: uppercase;
+            }
+            & h2{
+                font-size: 2rem;
+                font-weight: 700;
+                color: #fff;
+                margin: 15px 0;
+                & span{
+                    background-color:$blue-lagoon ;
+                    padding: 0 10px;
+                }
+            }
+            & .container-text-button{
+                display: flex;
+                justify-content: space-between;
+                color: rgba(255, 255, 255, 0.522);
+                
+                p{
+                    width: 80%;
+                    font-size:.95rem;
+                }
+                .myButton{
+                    text-transform: uppercase;
+                    color:#fff;
+                    border: 1px solid $blue-lagoon;
+                    padding: 5 10px;
+                }
+            }
             & .card-container{
             margin: 60px auto;
             display: grid;
