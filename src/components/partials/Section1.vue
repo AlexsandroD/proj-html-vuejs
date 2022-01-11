@@ -79,7 +79,7 @@ export default {
                 font-size: 0.8rem;
                 margin: 10px 0;
                 &.line{
-                    border-left: 1px solid black;
+                    border-left: 2px solid $silver-sand;
                     padding: 10px;
                 }
             }
