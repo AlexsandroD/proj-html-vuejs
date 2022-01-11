@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;500;700&family=Martel+Sans:wght@300;700;900&family=Montserrat:wght@400;900&family=Roboto:wght@300;400;700&display=swap');
+
+// variables
+
+//color palette section
+
+//color cube
+$woodsmoke:#121117;
+$mid-gray:#69696D;
+$blue-lagoon:#038384;
+$dark-blue:#21333E;
+$silver-sand:#BCBDBD;
+$fountain-blue:#52BBBB;
+$tussock:#BD9542;
+$cafe-royale:#74370E;
+//color cube end
+
+// Median cut
+$gray-nurse:#E6ECE8;
+$shark:#191c1e;
+$kabul:#604f42;
+$breaker-bay:#609d9f;
+$smalt-blye:#59838c;
+// Median cut end
+
+// Material design
+$blue-chill:#16928E;
+$sea-nymph:#719a9c;
+$quincy:#5d412a;
+$merin:#403a36;
+$bermuda:#7fd2d5;
+// Material design end
+
+//color palette section end
+
+// variables end
+
+
+// resets
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// resets end
+
+// Typography
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+// Typography end
+
+
+// commons
+.flex{
+    display: flex;
+}
+// commons  end
