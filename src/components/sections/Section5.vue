@@ -14,7 +14,7 @@
 <script>
 import CardSec5 from "../micro/CardSec5.vue";
 export default {
-    name:"5",
+    name:"Section5",
     components:{
         CardSec5,
     },
