@@ -1,7 +1,7 @@
 <template>
-  <fotter>
-
-  </fotter>
+ <footer>
+   
+ </footer>
 </template>
 
 <script>

@@ -51,9 +51,8 @@ export default {
 
     .section2{
         background-color: $shark;
-        display:grid;
         & .container{
-            padding: 90px 0px;
+            padding: 80px 0px;
             width: 60%;
             margin: auto;
             & h5{

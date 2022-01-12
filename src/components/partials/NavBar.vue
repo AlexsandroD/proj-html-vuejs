@@ -2,7 +2,7 @@
   <nav class="navigation-bar">
       <Logo/>
       <div class="right-nav">
-        <Menu :menu="menuVoices"/>
+        <Menu/>
         <i class="far fa-user user"></i>
         <Button/>
       </div>
