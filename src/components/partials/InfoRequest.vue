@@ -2,7 +2,7 @@
   <div class="info-container" >
       <div class="info" id="slide">
         <h5>logistics services</h5>
-        <h1>cargo transport</h1>
+        <h1 id="slide2">cargo transport</h1>
         <p>Fractional or exclusive road cargo transportation to all regions,with small, medium and large vehicles</p>
         <ButtonInfo/>
         <BtnSecondary/>
@@ -29,7 +29,6 @@ export default {
     .info-container{
         width: 60%;
         margin: 200px auto;
-        height: 300px;
         position: relative;
         & .info{
             width:50%;
@@ -55,18 +54,21 @@ export default {
     #slide {
     position: absolute;
     left: -800px;
-    height: 370px;
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
+    animation: slide 1s forwards;
     animation-delay: 1s;
 }
 
 @-webkit-keyframes slide {
+    80%{ left: 100px;};
+
     100% { left: 0; }
 }
 
 @keyframes slide {
+    80%{ left: 100px;};
     100% { left: 0; }
 }
+
 </style>
