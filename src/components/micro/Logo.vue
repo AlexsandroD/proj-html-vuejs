@@ -2,7 +2,7 @@
 <a href="#">
     <div class="logo">
           <span class="left">nex</span>
-          <span class="right">gen</span>
+          <span class="right"> gen</span>
     </div>
 </a>
 </template>
@@ -19,7 +19,7 @@ export default {
     a{
         cursor: poiter;
     }
-    .logo{
+    .logo{  font-size: 1.5rem;
             text-transform: uppercase;
             font-weight: 700;
             letter-spacing:2px;
