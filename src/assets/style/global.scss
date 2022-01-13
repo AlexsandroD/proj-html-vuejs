@@ -8,7 +8,7 @@
 $woodsmoke:#121117;
 $mid-gray:#69696D;
 $blue-lagoon:#038384;
-$dark-lagoon:#058283;
+$dark-lagoon:#089999;
 $dark-blue:#21333E;
 $silver-sand:#BCBDBD;
 $fountain-blue:#52BBBB;
@@ -51,7 +51,7 @@ $text-gray:#BABFD0;
 
 // Typography
 body{
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 // Typography end
 
@@ -88,3 +88,26 @@ li{
 	transform:scale(0.98);
 }
 // button end
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #038384 #21333e;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #21333e;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #038384;
+    border-radius: 10px;
+    border: 3px solid #21333e;
+  }

@@ -12,7 +12,6 @@ export default {
 @import "../../assets/style/global.scss";
 .myButton{
     background-color: $fountain-blue;
-    margin-left:  10px;
     &:hover{
         opacity: 1;
     }

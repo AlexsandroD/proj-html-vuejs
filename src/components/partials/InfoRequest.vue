@@ -41,6 +41,7 @@ export default {
                 color:#fff;
                 font-size: 4rem;
                 text-transform: uppercase;
+                font-weight: 900;
 
             }
 
