@@ -1,5 +1,5 @@
 <template>
-        <div class="myButton opacity-"><a class="" href="#">get in touch</a></div>
+        <div class="myButton"><a class="" href="#">get in touch</a></div>
 </template>
 
 <script>
@@ -11,10 +11,9 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/style/global.scss";
 .myButton{
-    border-radius: 15px;
-    background-color: none;
-    background-color: rgba(255, 255, 255, 0.104);
-    transition:background-color 0.3s;
+    background-color:$fountain-blue;
+    transition:opacity 0.5s;
+    opacity: 0.7;
     &:hover{
         background-color:$fountain-blue;
         opacity: 1;
@@ -26,6 +25,5 @@ export default {
     }
     
 }
-
 
 </style>

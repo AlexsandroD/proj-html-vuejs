@@ -112,6 +112,10 @@ footer{
                 padding: 35px;
                 border-radius: 5px;
                 background-color:rgba(128, 128, 128, 0.131);
+                transition:transform 0.3s;
+                &:hover{
+                    transform: translateY(-8px);
+                }
                 ul{
                     color:$text-gray;
                     li{

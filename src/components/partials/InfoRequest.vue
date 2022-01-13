@@ -4,20 +4,20 @@
         <h5>logistics services</h5>
         <h1>cargo transport</h1>
         <p>Fractional or exclusive road cargo transportation to all regions,with small, medium and large vehicles</p>
-        <Button/>
+        <ButtonInfo/>
         <BtnSecondary/>
       </div>
   </div>
 </template>
 
 <script>
-import Button from "../micro/Button.vue";
+import ButtonInfo from "../micro/ButtonInfo.vue";
 import BtnSecondary from "../micro/BtnSecondary.vue";
 
 export default {
     name:"InfoRequest",
     components:{
-        Button,
+        ButtonInfo,
         BtnSecondary,
     }
 }

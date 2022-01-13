@@ -25,6 +25,10 @@ export default {
     background-color: rgba(255, 255, 255, 0.07);
     border-radius: 10px;
     aspect-ratio: 1.2;
+    transition:transform 0.3s;
+    &:hover{
+        transform: translateY(-8px);
+    }
     & .icons{
     display:flex;
     filter: invert(1);

@@ -55,9 +55,9 @@ export default {
         width: 60%;
         margin: auto;
         transition: background-color 0.3s;
-        border-radius: 15px 4px 4px 15px;
+        border-radius: 15px 20px 20px 15px;
         &.scroll{
-            background-color:rgba(0, 0, 0, 0.496);
+            background-color:rgba(0, 0, 0, 0.679);
         }
         & .right-nav{
             font-size: 0.90rem;
