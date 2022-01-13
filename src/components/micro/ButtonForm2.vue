@@ -12,8 +12,13 @@ export default {
 @import "../../assets/style/global.scss";
 .myButton{
     border: 1px solid $blue-text;
+    transition:0.3s ;
     &:hover{
-        opacity: 1;
+         
+                        opacity:1;
+                        outline: $blue-lagoon solid 1px;
+                        outline-offset: 5px;
+                    
     }
     & a{
         color:$blue-text;

@@ -65,7 +65,12 @@ export default {
             align-items: center;
             & .user{
                 color:#fff;
-                margin: 0 10px; 
+                margin: 0 10px;
+                transition: transform 0.5s;
+                &:hover{
+                  transform: rotate(360deg);
+                  color:$fountain-blue;
+                } 
            }
         }
 

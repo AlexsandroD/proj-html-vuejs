@@ -13,8 +13,14 @@ export default {
 .myButton{
     margin-top: 30px;
     border: 1px solid $blue-text;
+    opacity: 0.8;
+    transition:0.5s;
     &:hover{
-        opacity: 1;
+          
+                        opacity:1;
+                        outline: $blue-lagoon solid 1px;
+                        outline-offset: 5px;
+                    
     }
     & a{
         color:#fff;

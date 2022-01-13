@@ -83,6 +83,13 @@ export default {
                     color:#fff;
                     border: 1px solid $blue-lagoon;
                     padding: 5 10px;
+                    opacity:0.8;
+                    transition: 0.5s;
+                    &:hover{
+                        opacity:1;
+                        outline: $blue-lagoon solid 1px;
+                        outline-offset: 5px;
+                    }
                 }
             }
             & .card-container{
