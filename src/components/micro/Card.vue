@@ -45,9 +45,26 @@ export default {
       background-color: $blue-lagoon;
       color: $fountain-blue;
     }
-    & .icon-right a {
-      color: $fountain-blue;
+    .icon-right{
+         display:grid;
+          place-items: center;
+        width: 30px;
+        height: 30px;
+        color: $fountain-blue;
+        transition: 0.3s ease-in-out;
+      & a{
+          color:$fountain-blue;
+      }
+      &:hover{
+          position: relative;
+          width: 30px;
+          height: 30px;
+          color:$smalt-blue;
+          border-radius:50%;
+          background-color: $blue-lagoon
+      }
     }
+    
   }
   & h4 {
     color: #fff;
