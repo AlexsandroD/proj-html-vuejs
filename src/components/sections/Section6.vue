@@ -8,7 +8,7 @@
             <Form/>
         </div>
         <div class="right">
-            <h4>Example Inc.</h4>
+            <h3>Example Inc.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p>present diam lacus, dapitus sed imperdiet consectetur</p>
 
@@ -65,13 +65,14 @@ export default {
         }
         p{
             margin: 25px 0;
+            color: gray;
         }
     }
     & .right{
         width: 30%;
         p{
             margin: 15px 0;
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             color: gray;
         }
         .info{

@@ -14,19 +14,19 @@
                     <ButtonFooter/>
                 </div>
                 <div class="card-link">
-                    <h2>About</h2>
+                    <h3>About</h3>
                     <ul>
                         <li v-for="(about, index) in abouts" :key="index"><i class="fas fa-chevron-right arrow"></i><a href="">{{about}}</a></li>
                     </ul>
                 </div>
                        <div class="card-link">
-                    <h2>Transport</h2>
+                    <h3>Transport</h3>
                     <ul>
                          <li v-for="(transport, index) in transports" :key="index"><i class="fas fa-chevron-right arrow"></i><a href="">{{transport}}</a></li>
                     </ul>
                 </div>
                        <div class="card-link">
-                    <h2>Support</h2>
+                    <h3>Support</h3>
                     <ul>
                          <li v-for="(support, index) in supports" :key="index"><i class="fas fa-chevron-right arrow"></i><a href="">{{support}}</a></li>
                     </ul>
@@ -42,6 +42,11 @@
              <span>is Proudly Powered by </span>
              <span>Codings.</span>
          </div>
+         </div>
+         <div class="arrow">
+             <a href="#top-info">
+                 <i class="fas fa-arrow-up"></i>
+             </a>
          </div>
      </div>
  </footer>
@@ -107,12 +112,18 @@ footer{
                 padding: 35px;
                 border-radius: 5px;
                 background-color:rgba(128, 128, 128, 0.131);
-                li{
-                    margin: 10px 0;
-                    a{
-                        margin:0 10px;
-                        color: $text-gray;
-                        font-size: 0.8rem;
+                ul{
+                    color:$text-gray;
+                    li{
+                        margin: 10px 0;
+                        &:hover a{
+                            color:$fountain-blue ;
+                        }
+                        a{
+                            color:$text-gray;
+                            margin:0 10px;
+                            font-size: 0.8rem;
+                        }
                     }
                 }
             }
@@ -120,6 +131,7 @@ footer{
     }
 
     .footer-bottom{
+        position: relative;
         display: grid;
         height:60px;
         background-color:black;
@@ -135,6 +147,18 @@ footer{
             }
             & span:nth-last-child(1){
                 color:$blue-lagoon;
+            }
+        }
+        .arrow{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            a{
+                color: black;
+                background-color:rgba(128, 128, 128, 0.131);
+                padding: 10px;
+                border-radius: 50%;
             }
         }
     }

@@ -25,7 +25,7 @@ export default {
 @import "../../assets/style/global.scss";
 header{
     position: relative;
-    z-index: 1;
+    z-index: 999;
     height: 700px;
     background-image: url("../../assets/img/bg-9.jpg");
     background-repeat: no-repeat;

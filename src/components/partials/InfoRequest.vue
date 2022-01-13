@@ -28,7 +28,7 @@ export default {
 
     .info-container{
         width: 60%;
-        margin: 80px auto;
+        margin: 200px auto;
         height: 300px;
         & .info{
             width:50%;

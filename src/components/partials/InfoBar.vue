@@ -1,5 +1,5 @@
 <template>
-     <div class="info-bar">
+     <div class="info-bar" id="top-info">
           <div class="item-container">
             <div class="items1">
                 <div class="item">
@@ -18,9 +18,9 @@
                     <span>hello@example.com </span>
                 </div>
                 <div class="item icons">
-                    <i class="fab fa-facebook-f icon"></i>
-                    <i class="fab fa-twitter icon"></i>
-                    <i class="fab fa-twitter icon"></i>                    
+                    <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                    <a href="#"><i class="fab fa-twitter icon"></i></a>
+                    <a href="#" class="icon invert"> in</a>                           
                 </div>
             </div>
           </div>
@@ -63,6 +63,9 @@ export default {
         justify-content: flex-end;
         width: 50%;
         .item{
+            a{
+                color: #fff;
+            }
             margin: 0 10px;
             & .icon{
                 margin: 0 15px
@@ -70,6 +73,9 @@ export default {
 
             & span{
                 margin-left: 5px;
+            }
+            .invert{
+                font-weight: 700;
             }
         }
     }
