@@ -25,7 +25,7 @@ export default {
             letter-spacing:2px;
             color: white;
             & .left{
-                border-radius: 15px 0px 0px 15px;
+                border-radius: 20px 0px 0px 20px;
                 padding-left: 15px;
                 padding-top: 5px;
                 padding-bottom: 5px;
