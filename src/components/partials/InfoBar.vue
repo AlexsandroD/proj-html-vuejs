@@ -20,7 +20,7 @@
                 <div class="item icons">
                     <a href="#"><i class="fab fa-facebook-f icon"></i></a>
                     <a href="#"><i class="fab fa-twitter icon"></i></a>
-                    <a href="#" class="icon invert"> in</a>                           
+                    <a href="#"><i class="fab fa-invision icon invert"></i></a>                           
                 </div>
             </div>
           </div>
@@ -68,7 +68,11 @@ export default {
             }
             margin: 0 10px;
             & .icon{
-                margin: 0 15px
+                margin: 0 15px;
+                transition: transform 0.3s;
+                &:hover{
+                    transform:scale(1.5)
+                }
             }
 
             & span{
