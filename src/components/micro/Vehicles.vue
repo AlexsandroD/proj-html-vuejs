@@ -1,6 +1,6 @@
 <template>
     <li>
-        <img src="../../assets/img/truck-1.png" alt="truck">
+        <img v-scrollanimation src="../../assets/img/truck-1.png" alt="truck">
         <div class="text">
             <div>{{vehicle.type}}</div>
             <span>{{vehicle.maxKg}}</span>
@@ -45,5 +45,17 @@ li{
         }
     }
 }
+
+.before-enter{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all  0.5s ease-in-out;
+}
+
+.enter{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 </style>
